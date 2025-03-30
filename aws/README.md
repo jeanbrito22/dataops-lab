@@ -1,3 +1,6 @@
+[![English](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+[![Português](https://img.shields.io/badge/lang-pt--br-green.svg)](README.pt-br.md)
+
 # DataOps Lab - AWS
 
 This directory contains a collection of hands-on projects and components focused on DataOps using key AWS services.
