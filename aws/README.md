@@ -1,61 +1,60 @@
 # DataOps Lab - AWS
 
-Este diretório contém uma coleção de projetos e componentes práticos focados em DataOps utilizando os principais serviços da AWS.
+This directory contains a collection of hands-on projects and components focused on DataOps using key AWS services.
 
-O objetivo é criar uma base sólida e aplicada em **engenharia de dados, arquitetura de dados, qualidade, observabilidade, performance e FinOps**, utilizando boas práticas de automação, versionamento e infraestrutura como código.
-
----
-
-## 🧱 Estrutura dos Módulos
-
-| Módulo | Descrição |
-|--------|-----------|
-| `01-data-ingestion`         | Ingestão de dados com Kinesis, Lambda e S3 |
-| `02-data-modeling`          | Modelagem de dados com dbt + Athena + Glue Catalog |
-| `03-ci-cd`                  | Automatização de deploys com GitHub Actions |
-| `04-data-quality`           | Testes de qualidade com Great Expectations |
-| `05-orchestration`          | Orquestração de pipelines com Airflow em EC2 |
-| `06-observability`          | Monitoramento de jobs e queries com CloudWatch |
-| `07-governance-lineage`     | Catálogo de dados e lineage com DataHub |
-| `08-cloud-architecture`     | Diagramas e arquitetura de referência |
-| `09-cases`                  | Casos de uso aplicados (marketing, ecommerce, etc.) |
-| `10-performance-cost`       | Módulos de FinOps e performance (tempo e custo de execução) |
+The goal is to build a solid and applied foundation in **data engineering, data architecture, data quality, observability, performance, and FinOps**, using best practices in automation, version control, and infrastructure as code.
 
 ---
 
-## 🎯 Objetivos
+## 🧱 Module Structure
 
-- Criar pipelines de dados em ambientes controláveis (não gerenciados)
-- Controlar qualidade, performance, observabilidade e custo
-- Aplicar conceitos de DevOps/DataOps em cada camada da stack
-- Demonstrar conhecimento prático e multiplataforma (GCP, AWS, Databricks)
-
----
-
-## 🚀 Como usar
-
-Cada módulo possui um `README.md` próprio com:
-- Explicações sobre o contexto do projeto
-- Instruções de uso (infraestrutura, código, dependências)
-- Scripts de provisionamento (Terraform, bash)
-- Exemplos de execução local ou em nuvem
+| Module | Description |
+|--------|-------------|
+| `01-data-ingestion`         | Data ingestion with Lambda and S3 |
+| `02-data-modeling`          | Data modeling with dbt + Athena + Glue Catalog |
+| `03-ci-cd`                  | Deployment automation with GitHub Actions |
+| `04-data-quality`           | Data quality testing with dbt and its libraries |
+| `05-orchestration`          | Pipeline orchestration with Airflow on EC2 |
+| `06-observability`          | Job and query monitoring with CloudWatch |
+| `07-governance-lineage`     | Data catalog and lineage with DataHub |
+| `08-cloud-architecture`     | Reference diagrams and architecture |
+| `09-cases`                  | Applied use cases (marketing, ecommerce, etc.) |
+| `10-performance-cost`       | FinOps and performance modules (execution time and cost) |
 
 ---
 
-## 📌 Requisitos mínimos
+## 🎯 Objectives
 
-- Conta AWS com permissão para criar recursos (IAM, EC2, S3, Glue, Athena, etc.)
-- Docker e Docker Compose
-- Python 3.10+ com virtualenv
-- Terraform (opcional, mas recomendado)
-
----
-
-## 📬 Contribuição e evolução
-
-Este repositório será expandido com novos exemplos, testes, boas práticas e casos reais.
-
-Sinta-se à vontade para sugerir melhorias, abrir issues ou contribuir com ideias e automações.
+- Build data pipelines in controllable (non-managed) environments  
+- Monitor and control quality, performance, observability, and cost  
+- Apply DevOps/DataOps concepts across all layers of the stack  
+- Showcase practical and multiplatform knowledge (GCP, AWS, Databricks)  
 
 ---
 
+## 🚀 How to Use
+
+Each module has its own `README.md` with:
+- Context and project explanation  
+- Usage instructions (infrastructure, code, dependencies)  
+- Provisioning scripts (Terraform, bash)  
+- Examples for running locally or in the cloud  
+
+---
+
+## 📌 Minimum Requirements
+
+- AWS account with permissions to create resources (IAM, EC2, S3, Glue, Athena, etc.)  
+- Docker and Docker Compose  
+- Python 3.10+ with virtualenv  
+- Terraform (optional but recommended)  
+
+---
+
+## 📬 Contribution and Evolution
+
+This repository will be expanded with new examples, tests, best practices, and real-world cases.
+
+Feel free to suggest improvements, open issues, or contribute with ideas and automations.
+
+---

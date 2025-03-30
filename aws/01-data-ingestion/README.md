@@ -1,46 +1,45 @@
 # 01 - Data Ingestion (Batch) - AWS
 
-Este módulo contém exemplos de ingestão de dados em **batch** na AWS, com foco em soluções simples, escaláveis e de baixo custo — ideais para iniciar pipelines de dados dentro de boas práticas de DataOps.
+This module contains examples of **batch** data ingestion on AWS, focusing on simple, scalable, and low-cost solutions — ideal for starting data pipelines aligned with DataOps best practices.
 
 ---
 
-## 🎯 Objetivo
+## 🎯 Objective
 
-Demonstrar como realizar ingestões em batch de forma automatizada, versionada e observável, utilizando **AWS Lambda** para buscar dados de fontes externas e armazená-los no **Amazon S3** com organização por data.
-
----
-
-## 🧱 Subprojetos disponíveis
-
-| Subprojeto                      | Descrição |
-|----------------------------------|-----------|
-| `lambda_ingest_api_to_s3/`       | Ingestão diária de dados de uma API pública para o S3, com versionamento por data |
+Demonstrate how to perform batch ingestions in an automated, versioned, and observable way, using **AWS Lambda** to fetch data from external sources and store it in **Amazon S3**, organized by date.
 
 ---
 
-## 🧰 Tecnologias e Serviços Usados
+## 🧱 Available Subprojects
 
-- **AWS Lambda**
-- **Amazon S3**
-- **Amazon EventBridge (agendamento)**
-- **Terraform** (infraestrutura como código)
-- **AWS CloudWatch** (logs e métricas)
+| Subproject                    | Description |
+|------------------------------|-------------|
+| `lambda_ingest_api_to_s3/`   | Daily ingestion of data from a public API into S3, with date-based versioning |
 
 ---
 
-## 🧪 Princípios aplicados de DataOps
+## 🧰 Technologies and Services Used
 
-- ⚙️ Infraestrutura como código (IaC)
-- 🔁 Pipelines versionadas e reprodutíveis
-- 📊 Observabilidade com logs e dashboards
-- 🧪 Testes básicos para garantir sucesso da ingestão
-- 💰 Simplicidade e controle de custos (FinOps)
+- **AWS Lambda**  
+- **Amazon S3**  
+- **Amazon EventBridge** (scheduling)  
+- **Terraform** (infrastructure as code)  
+- **AWS CloudWatch** (logs and metrics)  
 
 ---
 
-## 🚀 Como usar
+## 🧪 Applied DataOps Principles
 
-1. Acesse o subprojeto desejado:
+- ⚙️ Infrastructure as Code (IaC)  
+- 🔁 Versioned and reproducible pipelines  
+- 📊 Observability with logs and dashboards  
+- 🧪 Basic tests to ensure ingestion success  
+- 💰 Simplicity and cost control (FinOps)  
+
+---
+
+## 🚀 How to Use
+
+1. Navigate to the desired subproject:
 ```bash
 cd lambda_ingest_api_to_s3
-
