@@ -1,22 +1,20 @@
 # 🧪 DataOps Lab
 
-O **DataOps Lab** é um laboratório prático voltado para experimentação, aprendizado e desenvolvimento de boas práticas em **DataOps**, com foco em automação, observabilidade, qualidade de dados e integração contínua de pipelines de dados.
+**DataOps Lab** is a hands-on lab focused on experimentation, learning, and the development of best practices in **DataOps**, with an emphasis on automation, observability, data quality, and continuous integration of data pipelines.
 
-## 🚀 Objetivos
+## 🚀 Objectives
 
-- Explorar e aplicar os princípios de DataOps
-- Integrar ferramentas como Airflow, dbt, Terraform, e observabilidade
-- Criar ambientes reprodutíveis para experimentação
-- Simular cenários reais de pipelines em produção com monitoramento e alertas
+- Explore and apply DataOps principles  
+- Integrate tools such as Airflow, dbt, Terraform, and observability solutions  
+- Create reproducible environments for experimentation  
+- Simulate real-world production pipeline scenarios with monitoring and alerting  
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-- Python 3.x
-- Apache Airflow
-- dbt (Data Build Tool)
-- Terraform
-- Docker
-- GCP / AWS
-- GitHub Actions (CI/CD)
-
-
+- Python 3.x  
+- Apache Airflow  
+- dbt (Data Build Tool)  
+- Terraform  
+- Docker  
+- GCP / AWS  
+- GitHub Actions (CI/CD)  

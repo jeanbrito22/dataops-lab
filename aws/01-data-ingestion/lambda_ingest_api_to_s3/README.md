@@ -1,42 +1,41 @@
-# Lambda - Ingestão de API para S3 (Batch)
+# Lambda - API to S3 Ingestion (Batch)
 
-> Parte do módulo `01-data-ingestion` da especialização em DataOps na AWS.
-
----
-
-## 📌 Objetivo
-
-Criar uma função Lambda que roda em batch (agendada) para:
-
-- Buscar dados de uma API pública
-- Armazenar os dados brutos no Amazon S3
-- Organizar os arquivos por data (`YYYY/MM/DD`)
-- Automatizar o deploy com GitHub Actions
+> Part of the `01-data-ingestion` module from the DataOps specialization on AWS.
 
 ---
 
-## 🧰 Tecnologias e Serviços Utilizados
+## 📌 Objective
 
-- AWS Lambda (Python)
-- Amazon S3
-- Amazon EventBridge (agendamento)
-- AWS CloudWatch (logs)
-- GitHub Actions (CI/CD)
-- Terraform (infraestrutura como código)
+Create a scheduled batch Lambda function to:
+
+- Fetch data from a public API  
+- Store raw data in Amazon S3  
+- Organize files by date (`YYYY/MM/DD`)  
+- Automate deployment with GitHub Actions  
 
 ---
 
-## 🧱 Estrutura do Projeto
+## 🧰 Technologies and Services Used
+
+- AWS Lambda (Python)  
+- Amazon S3  
+- Amazon EventBridge (scheduling)  
+- AWS CloudWatch (logs)  
+- GitHub Actions (CI/CD)  
+- Terraform (infrastructure as code)  
+
+---
+
+## 🧱 Project Structure
 
 ```bash
 lambda_ingest_api_to_s3/
-├── lambda/                        # Código Python da função Lambda
+├── lambda/                        # Python code for the Lambda function
 │   └── handler.py
 ├── .github/workflows/
-│   └── deploy_lambda.yml          # Pipeline GitHub Actions
+│   └── deploy_lambda.yml          # GitHub Actions pipeline
 ├── terraform/
-│   └── main.tf                    # Infraestrutura da função e S3
-├── deploy.sh                      # Script local de deploy (manual)
+│   └── main.tf                    # Infrastructure for the function and S3
+├── deploy.sh                      # Local deployment script (manual)
 ├── requirements.txt
 └── README.md
-
