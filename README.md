@@ -1,3 +1,6 @@
+[![English](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+[![Português](https://img.shields.io/badge/lang-pt--br-green.svg)](README.pt-br.md)
+
 # 🧪 DataOps Lab
 
 **DataOps Lab** is a hands-on lab focused on experimentation, learning, and the development of best practices in **DataOps**, with an emphasis on automation, observability, data quality, and continuous integration of data pipelines.
