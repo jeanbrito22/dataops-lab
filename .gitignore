@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+
+# Node (caso use algum plugin)
+node_modules/
+
+# Virtual envs
+.venv/
+venv/
+
+# Lambda packages
+lambda_package.zip
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# IDEs
+.vscode/
+.idea/
+
+# MacOS / Linux
+.DS_Store
+
+!.github
+!.github/**
