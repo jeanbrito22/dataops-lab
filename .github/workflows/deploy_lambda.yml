@@ -1,0 +1,44 @@
+name: Deploy Lambda with Terraform
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'aws/01-data-ingestion/lambda_ingest_api_to_s3/**'
+      - '.github/workflows/deploy_lambda_with_terraform.yml'
+
+jobs:
+  deploy:
+    name: Deploy Infra and Lambda
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Configurar AWS CLI
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Instalar Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.6.5
+
+      - name: Compactar código da Lambda
+        run: |
+          cd aws/01-data-ingestion/lambda_ingest_api_to_s3/lambda
+          zip -r ../../../lambda_package.zip .
+          cd ../../../
+
+      - name: Inicializar Terraform
+        working-directory: aws/01-data-ingestion/lambda_ingest_api_to_s3/terraform
+        run: terraform init
+
+      - name: Aplicar Terraform (deploy Lambda)
+        working-directory: aws/01-data-ingestion/lambda_ingest_api_to_s3/terraform
+        run: terraform apply -auto-approve
