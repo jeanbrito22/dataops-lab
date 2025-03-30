@@ -1,3 +1,6 @@
+[![English](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+[![Português](https://img.shields.io/badge/lang-pt--br-green.svg)](README.pt-br.md)
+
 # Lambda - API to S3 Ingestion (Batch)
 
 > Part of the `01-data-ingestion` module from the DataOps specialization on AWS.
@@ -19,7 +22,7 @@ Create a scheduled batch Lambda function to:
 
 - AWS Lambda (Python)  
 - Amazon S3  
-- Amazon EventBridge (scheduling)  
+- EC2 + Airflow (scheduling)  
 - AWS CloudWatch (logs)  
 - GitHub Actions (CI/CD)  
 - Terraform (infrastructure as code)  
