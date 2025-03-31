@@ -15,9 +15,12 @@ venv/
 lambda_package.zip
 
 # Terraform
+*.tfstate
+*.tfstate.*
+*.backup
 .terraform/
-terraform.tfstate
-terraform.tfstate.backup
+.terraform.lock.hcl
+crash.log
 terraform.tfvars
 
 # IDEs
